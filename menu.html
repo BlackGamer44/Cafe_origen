@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú · Café Origen</title>
+<meta name="description" content="Café Origen — tostado artesanal, de la semilla a la taza.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+(function(){
+  var tema = localStorage.getItem('co-theme');
+  if (tema === 'dark') document.documentElement.setAttribute('data-theme','dark');
+  var idioma = localStorage.getItem('co-lang') || 'es';
+  document.documentElement.setAttribute('data-lang', idioma);
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido / Skip to content</a>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg co-navbar">
+    <div class="container">
+      <a class="navbar-brand co-brand" href="index.html">
+        <span class="co-brand-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 13h18v7a9 9 0 0 1-9 9v0a9 9 0 0 1-9-9v-7Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 15h2.5A3.5 3.5 0 0 1 30 18.5v0A3.5 3.5 0 0 1 26.5 22H24" stroke="currentColor" stroke-width="2"/>
+            <path d="M11 9c-.8-1.2-.8-2.2 0-3.5M16 9c-.8-1.2-.8-2.2 0-3.5M21 9c-.8-1.2-.8-2.2 0-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="co-brand-text">
+          Café Origen
+          <small class="co-brand-tag lang-es">De la semilla a la taza</small>
+          <small class="co-brand-tag lang-en">From seed to cup</small>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html"><span class="lang-es">Historia</span><span class="lang-en">Our Story</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="mision-vision.html"><span class="lang-es">Misión y Visión</span><span class="lang-en">Mission &amp; Vision</span></a></li>
+          <li class="nav-item"><a class="nav-link is-active" href="menu.html"><span class="lang-es">Menú</span><span class="lang-en">Menu</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="promociones.html"><span class="lang-es">Promociones</span><span class="lang-en">Deals</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="visitanos.html"><span class="lang-es">Visítanos</span><span class="lang-en">Visit Us</span></a></li>
+        </ul>
+
+        <div class="co-controls">
+          <button id="btnIdioma" class="co-pill-btn" type="button" title="Cambiar idioma / Switch language">
+            <span class="lang-es">EN</span><span class="lang-en">ES</span>
+          </button>
+          <button id="btnTema" class="co-pill-btn co-theme-btn" type="button" title="Modo oscuro / Dark mode">
+            <i class="bi bi-moon-stars-fill co-icon-dark"></i>
+            <i class="bi bi-sun-fill co-icon-light"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow"><span class="lang-es">Catálogo</span><span class="lang-en">Catalog</span></span>
+    <h1><span class="lang-es">Nuestro menú</span><span class="lang-en">Our menu</span></h1>
+    <p class="section-lead lang-es">Cada bebida y postre lleva un indicador de intensidad (de 1 a 5 granos) para ayudarte a elegir.</p>
+    <p class="section-lead lang-en">Every drink and dessert shows an intensity rating (1 to 5 beans) to help you choose.</p>
+  </div>
+</section>
+
+<section class="section pt-4">
+  <div class="container">
+    <div class="menu-filter mb-5">
+      <button class="menu-filter-btn is-active" data-filtro="todos"><span class="lang-es">Todos</span><span class="lang-en">All</span></button>
+      <button class="menu-filter-btn" data-filtro="calientes">
+        <span class="lang-es">Bebidas calientes</span>
+        <span class="lang-en">Hot drinks</span>
+      </button>
+      <button class="menu-filter-btn" data-filtro="frias">
+        <span class="lang-es">Bebidas frías</span>
+        <span class="lang-en">Cold drinks</span>
+      </button>
+      <button class="menu-filter-btn" data-filtro="comida">
+        <span class="lang-es">Repostería y comida</span>
+        <span class="lang-en">Bakery &amp; food</span>
+      </button>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="calientes">
+          <img class="product-photo" src="assets/img/menu/espresso.jpg" alt="Espresso" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Espresso</span>
+              <span class="product-name lang-en">Espresso</span>
+            </div>
+            <div class="product-price">$38 MXN</div>
+            <p class="product-desc lang-es">Shot doble, extraído lento para resaltar cuerpo y crema.</p>
+            <p class="product-desc lang-en">Double shot, slow-pulled for full body and crema.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="calientes">
+          <img class="product-photo" src="assets/img/menu/americano.jpg" alt="Americano" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Americano</span>
+              <span class="product-name lang-en">Americano</span>
+            </div>
+            <div class="product-price">$42 MXN</div>
+            <p class="product-desc lang-es">Espresso alargado con agua caliente, suave y aromático.</p>
+            <p class="product-desc lang-en">Espresso lengthened with hot water, smooth and aromatic.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="calientes">
+          <img class="product-photo" src="assets/img/menu/latte.jpg" alt="Latte" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Latte</span>
+              <span class="product-name lang-en">Latte</span>
+            </div>
+            <div class="product-price">$52 MXN</div>
+            <p class="product-desc lang-es">Espresso con leche vaporizada y una capa fina de espuma.</p>
+            <p class="product-desc lang-en">Espresso with steamed milk and a thin layer of foam.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span class="is-filled"></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="calientes">
+          <img class="product-photo" src="assets/img/menu/chocolate.jpg" alt="Chocolate Caliente" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Chocolate Caliente</span>
+              <span class="product-name lang-en">Hot Chocolate</span>
+            </div>
+            <div class="product-price">$48 MXN</div>
+            <p class="product-desc lang-es">Chocolate artesanal fundido con leche entera.</p>
+            <p class="product-desc lang-en">Artisan chocolate melted with whole milk.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="frias">
+          <img class="product-photo" src="assets/img/menu/frappe.jpg" alt="Frappé de Café" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Frappé de Café</span>
+              <span class="product-name lang-en">Coffee Frappé</span>
+            </div>
+            <div class="product-price">$60 MXN</div>
+            <p class="product-desc lang-es">Café frío batido con hielo, leche y un toque dulce.</p>
+            <p class="product-desc lang-en">Cold coffee blended with ice, milk and a touch of sweetness.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span class="is-filled"></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/pay-zanahoria.jpg" alt="Pay de Zanahoria" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Pay de Zanahoria</span>
+              <span class="product-name lang-en">Carrot Cake</span>
+            </div>
+            <div class="product-price">$55 MXN</div>
+            <p class="product-desc lang-es">Rebanada húmeda con especias y betún de queso crema.</p>
+            <p class="product-desc lang-en">Moist slice with spices and cream-cheese frosting.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/pay-manzana.jpg" alt="Pay de Manzana" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Pay de Manzana</span>
+              <span class="product-name lang-en">Apple Cake</span>
+            </div>
+            <div class="product-price">$55 MXN</div>
+            <p class="product-desc lang-es">Rebanada húmeda con especias y betún de queso crema.</p>
+            <p class="product-desc lang-en">Moist slice with spices and cream-cheese frosting.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/pay-nuez.jpg" alt="Pay de Nuez" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Pay de Nuez</span>
+              <span class="product-name lang-en">Apple Cake</span>
+            </div>
+            <div class="product-price">$55 MXN</div>
+            <p class="product-desc lang-es">Rebanada húmeda con especias y betún de queso crema.</p>
+            <p class="product-desc lang-en">Moist slice with spices and cream-cheese frosting.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/pay-pina.jpg" alt="Pay de Piña" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Pay de Piña</span>
+              <span class="product-name lang-en">Apple Cake</span>
+            </div>
+            <div class="product-price">$55 MXN</div>
+            <p class="product-desc lang-es">Rebanada húmeda con especias y betún de queso crema.</p>
+            <p class="product-desc lang-en">Moist slice with spices and cream-cheese frosting.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/pay-queso.jpg" alt="Pay de Queso" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Pay de Queso</span>
+              <span class="product-name lang-en">Apple Cake</span>
+            </div>
+            <div class="product-price">$55 MXN</div>
+            <p class="product-desc lang-es">Rebanada húmeda con especias y betún de queso crema.</p>
+            <p class="product-desc lang-en">Moist slice with spices and cream-cheese frosting.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/sandwich-club.jpg" alt="Sandwich Club" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Sandwich Club</span>
+              <span class="product-name lang-en">Club Sandwich</span>
+            </div>
+            <div class="product-price">$78 MXN</div>
+            <p class="product-desc lang-es">Pan tostado, pollo, tocino, lechuga, jitomate y aderezo.</p>
+            <p class="product-desc lang-en">Toasted bread, chicken, bacon, lettuce, tomato and dressing.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span class="is-filled"></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/muffin-arandano.jpg" alt="Muffin de Arándano" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Muffin de Arándano</span>
+              <span class="product-name lang-en">Blueberry Muffin</span>
+            </div>
+            <div class="product-price">$40 MXN</div>
+            <p class="product-desc lang-es">Esponjoso, relleno de arándanos frescos.</p>
+            <p class="product-desc lang-en">Fluffy, filled with fresh blueberries.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span></span><span></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 producto-col">
+        <div class="co-card product-card" data-categoria="comida">
+          <img class="product-photo" src="assets/img/menu/muffin-chocolate.jpg" alt="Muffin de Chocolate" loading="lazy">
+          <div class="product-body">
+            <div class="product-top">
+              <span class="product-name lang-es">Muffin de Chocolate</span>
+              <span class="product-name lang-en">Chocolate Muffin</span>
+            </div>
+            <div class="product-price">$40 MXN</div>
+            <p class="product-desc lang-es">Esponjoso, relleno de chocolate.</p>
+            <p class="product-desc lang-en">Fluffy, filled with chocolate.</p>
+            <div class="intensity">
+              <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span><span></span>
+              <span class="intensity-label lang-es">Intensidad</span>
+              <span class="intensity-label lang-en">Intensity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="co-brand co-brand-footer" href="index.html">
+          <span class="co-brand-mark" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 13h18v7a9 9 0 0 1-9 9v0a9 9 0 0 1-9-9v-7Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 15h2.5A3.5 3.5 0 0 1 30 18.5v0A3.5 3.5 0 0 1 26.5 22H24" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="co-brand-text">Café Origen</span>
+        </a>
+        <p class="footer-tag lang-es">Tostado artesanal en lote pequeño, de la semilla a la taza.</p>
+        <p class="footer-tag lang-en">Small-batch artisan roasting, from seed to cup.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading"><span class="lang-es">Explora</span><span class="lang-en">Explore</span></h6>
+        <ul class="footer-links">
+          <li><a href="historia.html"><span class="lang-es">Historia</span><span class="lang-en">Our Story</span></a></li>
+          <li><a href="menu.html"><span class="lang-es">Menú</span><span class="lang-en">Menu</span></a></li>
+          <li><a href="promociones.html"><span class="lang-es">Promociones</span><span class="lang-en">Deals</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <h6 class="footer-heading"><span class="lang-es">Horario</span><span class="lang-en">Hours</span></h6>
+        <ul class="footer-links footer-hours">
+          <li><span class="lang-es">Lun – Vie</span><span class="lang-en">Mon – Fri</span> <b>7:00 – 21:00</b></li>
+          <li><span class="lang-es">Sáb</span><span class="lang-en">Sat</span> <b>8:00 – 22:00</b></li>
+          <li><span class="lang-es">Dom</span><span class="lang-en">Sun</span> <b>9:00 – 18:00</b></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3">
+        <h6 class="footer-heading"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-geo-alt"></i> Av. Siempre Viva 123, Allende</li>
+          <li><i class="bi bi-telephone"></i> (866) 127-9182</li>
+          <li><i class="bi bi-envelope"></i> cafeorigen@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="js-anio-actual">2026</span> Café Origen. <span class="lang-es">Todos los derechos reservados.</span><span class="lang-en">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>
+
+<button id="btnArriba" class="co-back-top" type="button" aria-label="Volver arriba">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

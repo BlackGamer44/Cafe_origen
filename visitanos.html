@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visítanos · Café Origen</title>
+<meta name="description" content="Café Origen — tostado artesanal, de la semilla a la taza.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+(function(){
+  var tema = localStorage.getItem('co-theme');
+  if (tema === 'dark') document.documentElement.setAttribute('data-theme','dark');
+  var idioma = localStorage.getItem('co-lang') || 'es';
+  document.documentElement.setAttribute('data-lang', idioma);
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido / Skip to content</a>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg co-navbar">
+    <div class="container">
+      <a class="navbar-brand co-brand" href="index.html">
+        <span class="co-brand-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 13h18v7a9 9 0 0 1-9 9v0a9 9 0 0 1-9-9v-7Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 15h2.5A3.5 3.5 0 0 1 30 18.5v0A3.5 3.5 0 0 1 26.5 22H24" stroke="currentColor" stroke-width="2"/>
+            <path d="M11 9c-.8-1.2-.8-2.2 0-3.5M16 9c-.8-1.2-.8-2.2 0-3.5M21 9c-.8-1.2-.8-2.2 0-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="co-brand-text">
+          Café Origen
+          <small class="co-brand-tag lang-es">De la semilla a la taza</small>
+          <small class="co-brand-tag lang-en">From seed to cup</small>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html"><span class="lang-es">Historia</span><span class="lang-en">Our Story</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="mision-vision.html"><span class="lang-es">Misión y Visión</span><span class="lang-en">Mission &amp; Vision</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html"><span class="lang-es">Menú</span><span class="lang-en">Menu</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="promociones.html"><span class="lang-es">Promociones</span><span class="lang-en">Deals</span></a></li>
+          <li class="nav-item"><a class="nav-link is-active" href="visitanos.html"><span class="lang-es">Visítanos</span><span class="lang-en">Visit Us</span></a></li>
+        </ul>
+
+        <div class="co-controls">
+          <button id="btnIdioma" class="co-pill-btn" type="button" title="Cambiar idioma / Switch language">
+            <span class="lang-es">EN</span><span class="lang-en">ES</span>
+          </button>
+          <button id="btnTema" class="co-pill-btn co-theme-btn" type="button" title="Modo oscuro / Dark mode">
+            <i class="bi bi-moon-stars-fill co-icon-dark"></i>
+            <i class="bi bi-sun-fill co-icon-light"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow"><span class="lang-es">Te esperamos</span><span class="lang-en">We're waiting for you</span></span>
+    <h1><span class="lang-es">Visítanos</span><span class="lang-en">Visit us</span></h1>
+  </div>
+</section>
+
+<section class="section pt-4">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Ubicación, horario y datos de contacto -->
+      <div class="col-lg-5">
+        <h2 class="h4 mb-3 lang-es">Ubicación</h2>
+        <h2 class="h4 mb-3 lang-en">Location</h2>
+
+        <div class="info-row">
+          <i class="bi bi-geo-alt"></i>
+          <div>
+            <strong class="lang-es">Dirección</strong><strong class="lang-en">Address</strong>
+            <p class="mb-0">Av. Siempre Viva 123, Col. Centro<br>Allende, C.P. 26530</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="bi bi-telephone"></i>
+          <div>
+            <strong class="lang-es">Teléfono</strong><strong class="lang-en">Phone</strong>
+            <p class="mb-0"><a href="tel:+528660000000">(866) 127-9182</a></p>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="bi bi-envelope"></i>
+          <div>
+            <strong class="lang-es">Correo</strong><strong class="lang-en">Email</strong>
+            <p class="mb-0"><a href="mailto:hola@cafeorigen.com">hola@cafeorigen.com</a></p>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="bi bi-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <p class="mb-0"><a href="https://wa.me/528660000000" target="_blank" rel="noopener">+52 866 000 0000</a></p>
+          </div>
+        </div>
+
+        <h2 class="h4 mt-5 mb-3 lang-es">Horario de atención</h2>
+        <h2 class="h4 mt-5 mb-3 lang-en">Opening hours</h2>
+        <table class="hours-table">
+          <tr><td class="lang-es">Lunes a viernes</td><td class="lang-en">Monday to Friday</td><td class="text-end">7:00 – 21:00</td></tr>
+          <tr><td class="lang-es">Sábado</td><td class="lang-en">Saturday</td><td class="text-end">8:00 – 22:00</td></tr>
+          <tr><td class="lang-es">Domingo</td><td class="lang-en">Sunday</td><td class="text-end">9:00 – 18:00</td></tr>
+        </table>
+
+        <h2 class="h4 mt-5 mb-3 lang-es">Cómo llegar</h2>
+        <h2 class="h4 mt-5 mb-3 lang-en">Getting here</h2>
+        <iframe
+          class="map-frame"
+          src="https://www.google.com/maps?q=Monclova,Coahuila,Mexico&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de Café Origen en Google Maps">
+        </iframe>
+        <p class="small mt-2 lang-es"><em>Este mapa es un marcador de posición: sustitúyelo por el "insertar mapa" de la dirección real de tu cafetería desde Google Maps.</em></p>
+        <p class="small mt-2 lang-en"><em>This map is a placeholder: replace it with the real "embed map" from your café's actual address in Google Maps.</em></p>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="col-lg-7" id="contacto">
+        <h2 class="h4 mb-3 lang-es">Envíanos un mensaje</h2>
+        <h2 class="h4 mb-3 lang-en">Send us a message</h2>
+        <p class="section-lead lang-es">¿Dudas, comentarios o quieres cotizar un evento? Escríbenos, normalmente respondemos en menos de 24 horas.</p>
+        <p class="section-lead lang-en">Questions, feedback, or planning an event? Write to us — we usually reply within 24 hours.</p>
+
+        <div id="alertaExito" class="co-alert-success mb-4" hidden>
+          <span class="lang-es">¡Gracias! Tu mensaje fue enviado correctamente. Te responderemos pronto.</span>
+          <span class="lang-en">Thanks! Your message was sent successfully. We'll get back to you soon.</span>
+        </div>
+        <div id="alertaError" class="co-alert-error mb-4" hidden>
+          <span class="lang-es">Revisa los campos marcados: nombre, correo válido y mensaje son obligatorios.</span>
+          <span class="lang-en">Please check the highlighted fields: name, a valid email and message are required.</span>
+        </div>
+
+        <form id="formContacto" class="co-form" novalidate>
+          <div class="honeypot" aria-hidden="true">
+            <label for="sitio_web">Sitio web</label>
+            <input type="text" id="sitio_web" name="sitio_web" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="lang-es">Nombre</label>
+              <label for="nombre" class="lang-en">Name</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="lang-es">Correo electrónico</label>
+              <label for="email" class="lang-en">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-12">
+              <label for="asunto" class="lang-es">Asunto</label>
+              <label for="asunto" class="lang-en">Subject</label>
+              <input type="text" class="form-control" id="asunto" name="asunto">
+            </div>
+            <div class="col-12">
+              <label for="mensaje" class="lang-es">Mensaje</label>
+              <label for="mensaje" class="lang-en">Message</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-co-primary">
+                <span class="lang-es">Enviar mensaje</span><span class="lang-en">Send message</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="co-brand co-brand-footer" href="index.html">
+          <span class="co-brand-mark" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 13h18v7a9 9 0 0 1-9 9v0a9 9 0 0 1-9-9v-7Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 15h2.5A3.5 3.5 0 0 1 30 18.5v0A3.5 3.5 0 0 1 26.5 22H24" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="co-brand-text">Café Origen</span>
+        </a>
+        <p class="footer-tag lang-es">Tostado artesanal en lote pequeño, de la semilla a la taza.</p>
+        <p class="footer-tag lang-en">Small-batch artisan roasting, from seed to cup.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading"><span class="lang-es">Explora</span><span class="lang-en">Explore</span></h6>
+        <ul class="footer-links">
+          <li><a href="historia.html"><span class="lang-es">Historia</span><span class="lang-en">Our Story</span></a></li>
+          <li><a href="menu.html"><span class="lang-es">Menú</span><span class="lang-en">Menu</span></a></li>
+          <li><a href="promociones.html"><span class="lang-es">Promociones</span><span class="lang-en">Deals</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <h6 class="footer-heading"><span class="lang-es">Horario</span><span class="lang-en">Hours</span></h6>
+        <ul class="footer-links footer-hours">
+          <li><span class="lang-es">Lun – Vie</span><span class="lang-en">Mon – Fri</span> <b>7:00 – 21:00</b></li>
+          <li><span class="lang-es">Sáb</span><span class="lang-en">Sat</span> <b>8:00 – 22:00</b></li>
+          <li><span class="lang-es">Dom</span><span class="lang-en">Sun</span> <b>9:00 – 18:00</b></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3">
+        <h6 class="footer-heading"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-geo-alt"></i> Av. Siempre Viva 123, Allende</li>
+          <li><i class="bi bi-telephone"></i> (866) 127-9182</li>
+          <li><i class="bi bi-envelope"></i> cafeorigen@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="js-anio-actual">2026</span> Café Origen. <span class="lang-es">Todos los derechos reservados.</span><span class="lang-en">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>
+
+<button id="btnArriba" class="co-back-top" type="button" aria-label="Volver arriba">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

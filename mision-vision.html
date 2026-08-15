@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misión y Visión · Café Origen</title>
+<meta name="description" content="Café Origen — tostado artesanal, de la semilla a la taza.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+(function(){
+  var tema = localStorage.getItem('co-theme');
+  if (tema === 'dark') document.documentElement.setAttribute('data-theme','dark');
+  var idioma = localStorage.getItem('co-lang') || 'es';
+  document.documentElement.setAttribute('data-lang', idioma);
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido / Skip to content</a>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg co-navbar">
+    <div class="container">
+      <a class="navbar-brand co-brand" href="index.html">
+        <span class="co-brand-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 13h18v7a9 9 0 0 1-9 9v0a9 9 0 0 1-9-9v-7Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 15h2.5A3.5 3.5 0 0 1 30 18.5v0A3.5 3.5 0 0 1 26.5 22H24" stroke="currentColor" stroke-width="2"/>
+            <path d="M11 9c-.8-1.2-.8-2.2 0-3.5M16 9c-.8-1.2-.8-2.2 0-3.5M21 9c-.8-1.2-.8-2.2 0-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="co-brand-text">
+          Café Origen
+          <small class="co-brand-tag lang-es">De la semilla a la taza</small>
+          <small class="co-brand-tag lang-en">From seed to cup</small>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html"><span class="lang-es">Historia</span><span class="lang-en">Our Story</span></a></li>
+          <li class="nav-item"><a class="nav-link is-active" href="mision-vision.html"><span class="lang-es">Misión y Visión</span><span class="lang-en">Mission &amp; Vision</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html"><span class="lang-es">Menú</span><span class="lang-en">Menu</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="promociones.html"><span class="lang-es">Promociones</span><span class="lang-en">Deals</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="visitanos.html"><span class="lang-es">Visítanos</span><span class="lang-en">Visit Us</span></a></li>
+        </ul>
+
+        <div class="co-controls">
+          <button id="btnIdioma" class="co-pill-btn" type="button" title="Cambiar idioma / Switch language">
+            <span class="lang-es">EN</span><span class="lang-en">ES</span>
+          </button>
+          <button id="btnTema" class="co-pill-btn co-theme-btn" type="button" title="Modo oscuro / Dark mode">
+            <i class="bi bi-moon-stars-fill co-icon-dark"></i>
+            <i class="bi bi-sun-fill co-icon-light"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow"><span class="lang-es">Lo que nos mueve</span><span class="lang-en">What drives us</span></span>
+    <h1><span class="lang-es">Misión y visión</span><span class="lang-en">Mission &amp; vision</span></h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="mv-card is-mission">
+          <i class="bi bi-compass"></i>
+          <h3 class="h4 lang-es">Misión</h3>
+          <h3 class="h4 lang-en">Mission</h3>
+          <p class="lang-es">Servir café de origen trazable, tostado en pequeños lotes, en un espacio cálido donde cada persona se sienta bienvenida — y hacerlo de una forma justa para los productores que lo hacen posible.</p>
+          <p class="lang-en">To serve traceable, small-batch roasted coffee in a warm space where everyone feels welcome — done in a way that's fair to the growers who make it possible.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="mv-card is-vision">
+          <i class="bi bi-stars"></i>
+          <h3 class="h4 lang-es">Visión</h3>
+          <h3 class="h4 lang-en">Vision</h3>
+          <p class="lang-es">Ser el punto de encuentro favorito de nuestra comunidad y una referencia local en café de especialidad, reconocidos por la calidad de nuestro tueste y por el trato cercano a cada cliente.</p>
+          <p class="lang-en">To be our community's favorite meeting spot and a local reference for specialty coffee, known for the quality of our roast and the closeness of our service.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-bean"><i class="bi bi-cup-hot"></i></div>
+
+    <div class="row align-items-start gy-4">
+      <div class="col-lg-4">
+        <span class="eyebrow"><span class="lang-es">Nuestros valores</span><span class="lang-en">Our values</span></span>
+        <h2 class="section-title mt-2"><span class="lang-es">Lo que no negociamos</span><span class="lang-en">What we won't compromise on</span></h2>
+      </div>
+      <div class="col-lg-8">
+        <div class="value-chip">
+          <i class="bi bi-award bi-sm"></i>
+          <div>
+            <h4 class="h6 mb-1 lang-es">Calidad honesta</h4>
+            <h4 class="h6 mb-1 lang-en">Honest quality</h4>
+            <p class="mb-0 small lang-es">Probamos cada lote antes de servirlo. Si no cumple nuestro estándar, no sale a la barra.</p>
+            <p class="mb-0 small lang-en">We taste every batch before serving it. If it doesn't meet our standard, it doesn't reach the bar.</p>
+          </div>
+        </div>
+        <div class="value-chip">
+          <i class="bi bi-hand-thumbs-up"></i>
+          <div>
+            <h4 class="h6 mb-1 lang-es">Comercio justo</h4>
+            <h4 class="h6 mb-1 lang-en">Fair trade</h4>
+            <p class="mb-0 small lang-es">Pagamos precios justos a los productores y construimos relaciones de largo plazo con ellos.</p>
+            <p class="mb-0 small lang-en">We pay fair prices to growers and build long-term relationships with them.</p>
+          </div>
+        </div>
+        <div class="value-chip">
+          <i class="bi bi-house-heart"></i>
+          <div>
+            <h4 class="h6 mb-1 lang-es">Comunidad</h4>
+            <h4 class="h6 mb-1 lang-en">Community</h4>
+            <p class="mb-0 small lang-es">Somos un lugar para estudiar, trabajar o platicar con calma. Nuestra puerta está abierta para todos.</p>
+            <p class="mb-0 small lang-en">We're a place to study, work, or chat unhurried. Our door is open to everyone.</p>
+          </div>
+        </div>
+        <div class="value-chip">
+          <i class="bi bi-recycle"></i>
+          <div>
+            <h4 class="h6 mb-1 lang-es">Responsabilidad</h4>
+            <h4 class="h6 mb-1 lang-en">Responsibility</h4>
+            <p class="mb-0 small lang-es">Usamos empaques reciclables y reducimos el desperdicio en cada preparación.</p>
+            <p class="mb-0 small lang-en">We use recyclable packaging and reduce waste in every preparation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="co-brand co-brand-footer" href="index.html">
+          <span class="co-brand-mark" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 13h18v7a9 9 0 0 1-9 9v0a9 9 0 0 1-9-9v-7Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 15h2.5A3.5 3.5 0 0 1 30 18.5v0A3.5 3.5 0 0 1 26.5 22H24" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="co-brand-text">Café Origen</span>
+        </a>
+        <p class="footer-tag lang-es">Tostado artesanal en lote pequeño, de la semilla a la taza.</p>
+        <p class="footer-tag lang-en">Small-batch artisan roasting, from seed to cup.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <h6 class="footer-heading"><span class="lang-es">Explora</span><span class="lang-en">Explore</span></h6>
+        <ul class="footer-links">
+          <li><a href="historia.html"><span class="lang-es">Historia</span><span class="lang-en">Our Story</span></a></li>
+          <li><a href="menu.html"><span class="lang-es">Menú</span><span class="lang-en">Menu</span></a></li>
+          <li><a href="promociones.html"><span class="lang-es">Promociones</span><span class="lang-en">Deals</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <h6 class="footer-heading"><span class="lang-es">Horario</span><span class="lang-en">Hours</span></h6>
+        <ul class="footer-links footer-hours">
+          <li><span class="lang-es">Lun – Vie</span><span class="lang-en">Mon – Fri</span> <b>7:00 – 21:00</b></li>
+          <li><span class="lang-es">Sáb</span><span class="lang-en">Sat</span> <b>8:00 – 22:00</b></li>
+          <li><span class="lang-es">Dom</span><span class="lang-en">Sun</span> <b>9:00 – 18:00</b></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3">
+        <h6 class="footer-heading"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-geo-alt"></i> Av. Siempre Viva 123, Allende</li>
+          <li><i class="bi bi-telephone"></i> (866) 127-9182</li>
+          <li><i class="bi bi-envelope"></i> cafeorigen@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="js-anio-actual">2026</span> Café Origen. <span class="lang-es">Todos los derechos reservados.</span><span class="lang-en">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>
+
+<button id="btnArriba" class="co-back-top" type="button" aria-label="Volver arriba">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
